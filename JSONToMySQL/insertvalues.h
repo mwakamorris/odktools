@@ -41,7 +41,7 @@ class insertValues : public QObject
     Q_OBJECT
     Q_PROPERTY(int count READ count)
 public:
-    explicit insertValues(QObject *parent = 0);
+    explicit insertValues(QObject *parent = 0) ;
     ~insertValues();
     void insertValue(TinsertValueDef value);
     TinsertValueDef getValue(int index);
